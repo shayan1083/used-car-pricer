@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+car-price-app/node_modules
+car-price-app/.pnp
+car-price-app/.pnp.js
+
+# testing
+car-price-app/coverage
+
+# production
+car-price-app/build
+
+# misc
+car-price-app/.DS_Store
+car-price-app/.env.local
+car-price-app/.env.development.local
+car-price-app/.env.test.local
+car-price-app/.env.production.local
+
+car-price-app/npm-debug.log*
+car-price-app/yarn-debug.log*
+car-price-app/yarn-error.log*
+
+venv/*
+__pycache__/*
+
+random_forest_model.pkl
