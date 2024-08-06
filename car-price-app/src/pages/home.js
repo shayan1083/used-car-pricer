@@ -10,7 +10,6 @@ const Home = () => {
     const [trims, setTrims] = useState([])
     const [colors, setColors] = useState([])
     const [price, setPrice] = useState(null);
-    const [step, setStep] = useState(1);
 
     const [selectedMake, setSelectedMake] = useState('');
     const [selectedModel, setSelectedModel] = useState('');
@@ -51,15 +50,25 @@ const Home = () => {
     const handleMakeChange = (e) => {
         setSelectedMake(e.target.value); 
         setSelectedModel(''); // reset model selection when make changes
+        setSelectedTrim('')
+        setSelectedColor('')
+        setYear('')
+        setMileage('')
+        setEngineSize('')
+        setGasMileage('')
+        setTransmission('')
+        setFuelType('')
+        setDriveType('')
+        setLocation('')
+        
     }
 
     const handleContinue = async (e) => {
-        e.preventDefault();
-        if (selectedMake && selectedModel) {
+        setSelectedModel(e.target.value)
+        if (selectedMake && e) {
             try{
-                setLoading(true)
-                const trims = await fetch(`/trims?make=${selectedMake}&model=${selectedModel}`)
-                const colors = await fetch(`/colors?make=${selectedMake}&model=${selectedModel}`)
+                const trims = await fetch(`/trims?make=${selectedMake}&model=${e.target.value}`)
+                const colors = await fetch(`/colors?make=${selectedMake}&model=${e.target.value}`)
                 if (!trims.ok || !colors.ok){
                     throw new Error('Network response was not ok')
                 }
@@ -67,21 +76,32 @@ const Home = () => {
                 const color_list = await colors.json()
                 setTrims(trims_list.trims);
                 setColors(color_list.colors);
-                setStep(2);  // Move to the next step
-                setLoading(false)
             } 
             catch (error){
                 console.error('There was a problem with the fetch operation')
-                setLoading(false)
-            }
-            
+            }    
         }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        if (
+            !selectedMake ||
+            !selectedModel ||
+            !location ||
+            !year ||
+            !selectedTrim ||
+            !mileage ||
+            !engineSize ||
+            !gasMileage ||
+            !transmission ||
+            !fuelType ||
+            !driveType
+        ) {
+            alert('Please fill in all fields before submitting.');
+            return;
+        }
         try{
-            setLoading(true)
             const predictUrl = `/predict?
             make=${encodeURIComponent(selectedMake)}
             &model=${encodeURIComponent(selectedModel)}
@@ -101,11 +121,9 @@ const Home = () => {
             }
             const data = await response.json()
             setPrice(data.predicted_value);
-            setLoading(false)
         }
         catch (error){
             console.error('There was a problem with the fetch operation')
-            setLoading(false)
         }
         
     
@@ -119,99 +137,89 @@ const Home = () => {
         <div className="Home">
         <header className="Home-header"> 
             <p>Enter Information</p>
-            <div>
-            <form onSubmit={step === 1 ? handleContinue: handleSubmit}>
-                {step === 1 && (
-                    <>
-                        <select value={selectedMake} onChange={handleMakeChange}>
-                            <option value="">Select Make</option>
-                            {makes.map(make => (
-                                <option key={make} value={make}>{make}</option>
-                            ))}
-                        </select>
-                        <select value={selectedModel} onChange={(e) => setSelectedModel(e.target.value)}>
-                            <option value="">Select Model</option>
-                            {selectedMake && models[selectedMake].map(model => (
-                                <option key={model} value={model}>{model}</option>
-                            ))}
-                        </select>
-                        <button type='submit'>Continue</button>
-                    </>
-                )}
-
-                {step === 2 && (
-                    <>
-                        <input 
-                            type="text" 
-                            placeholder='Enter Your Zip Code' 
-                            onChange={(e) => setLocation(e.target.value)}>
-                        </input>
-                        <input
-                            type="text"
-                            placeholder="Year"
-                            value={year}
-                            onChange={(e) => setYear(e.target.value)}
-                        />
-                        <select value={selectedTrim} onChange={(e) => setSelectedTrim(e.target.value)}>
-                            <option value="">Select Trim</option>
-                            {trims.map(trim => (
-                                <option key={trim} value={trim}>{trim}</option>
-                            ))}
-                        </select>
-                        <select value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}>
-                            <option value="">Select Color</option>
-                            {colors.map(color => (
-                                <option key={color} value={color}>{color}</option>
-                            ))}
-                        </select>
-                        <input
-                            type="text"
-                            placeholder="Mileage"
-                            value={mileage}
-                            onChange={(e) => setMileage(e.target.value)}
-                        />
-                        <input
-                            type="text"
-                            placeholder="Engine Size"
-                            value={engineSize}
-                            onChange={(e) => setEngineSize(e.target.value)}
-                        />
-                        <input
-                            type="text"
-                            placeholder="Gas Mileage"
-                            value={gasMileage}
-                            onChange={(e) => setGasMileage(e.target.value)}
-                        />
-                        <select value={transmission} onChange={(e) => setTransmission(e.target.value)}>
-                            <option value="">Select Transmission</option>
-                            {transmissions.map(trans => (
-                                <option key={trans} value={trans}>{trans}</option>
-                            ))}
-                        </select>
-
-                        <select value={fuelType} onChange={(e) => setFuelType(e.target.value)}>
-                            <option value="">Select Fuel Type</option>
-                            {fuelTypes.map(fuel => (
-                                <option key={fuel} value={fuel}>{fuel}</option>
-                            ))}
-                        </select>
-
-                        <select value={driveType} onChange={(e) => setDriveType(e.target.value)}>
-                            <option value="">Select Drive Type</option>
-                            {driveTypes.map(drive => (
-                                <option key={drive} value={drive}>{drive}</option>
-                            ))}
-                        </select>
-                        <button type="submit" onClick={handleSubmit}>Find Price</button>
-                    </>
-                )}
+            <form className="form-select" onSubmit={handleSubmit}>
+                <>
+                    <select value={selectedMake} onChange={handleMakeChange}>
+                        <option value="">Select Make</option>
+                        {makes.map(make => (
+                            <option key={make} value={make}>{make}</option>
+                        ))}
+                    </select>
+                    <select value={selectedModel} onChange={(e) => handleContinue(e)}>
+                        <option value="">Select Model</option>
+                        {selectedMake && models[selectedMake].map(model => (
+                            <option key={model} value={model}>{model}</option>
+                        ))}
+                    </select>
+                    <input
+                        type="text"
+                        placeholder="Year"
+                        value={year}
+                        onChange={(e) => setYear(e.target.value)}
+                    />
+                    <select value={selectedTrim} onChange={(e) => setSelectedTrim(e.target.value)}>
+                        <option value="">Select Trim</option>
+                        {trims.map(trim => (
+                            <option key={trim} value={trim}>{trim}</option>
+                        ))}
+                    </select>
+                    <select value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}>
+                        <option value="">Select Color</option>
+                        {colors.map(color => (
+                            <option key={color} value={color}>{color}</option>
+                        ))}
+                    </select>
+                    <input
+                        type="text"
+                        placeholder="Mileage"
+                        value={mileage}
+                        onChange={(e) => setMileage(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Engine Size"
+                        value={engineSize}
+                        onChange={(e) => setEngineSize(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Gas Mileage"
+                        value={gasMileage}
+                        onChange={(e) => setGasMileage(e.target.value)}
+                    />
+                    <select value={transmission} onChange={(e) => setTransmission(e.target.value)}>
+                        <option value="">Select Transmission</option>
+                        {transmissions.map(trans => (
+                            <option key={trans} value={trans}>{trans}</option>
+                        ))}
+                    </select>
+                    <select value={fuelType} onChange={(e) => setFuelType(e.target.value)}>
+                        <option value="">Select Fuel Type</option>
+                        {fuelTypes.map(fuel => (
+                            <option key={fuel} value={fuel}>{fuel}</option>
+                        ))}
+                    </select>
+                    <select value={driveType} onChange={(e) => setDriveType(e.target.value)}>
+                        <option value="">Select Drive Type</option>
+                        {driveTypes.map(drive => (
+                            <option key={drive} value={drive}>{drive}</option>
+                        ))}
+                    </select>
+                    <input 
+                        type="text" 
+                        placeholder='Enter Your Zip Code' 
+                        value={location}
+                        onChange={(e) => setLocation(e.target.value)}>
+                    </input>
+                    <button type="submit" onClick={handleSubmit}>Find Price</button>
+                </>
+                
                 
             </form>
             {price && <p>Estimated Price: ${price}</p>}
-            </div>
         </header>
         </div>
     );
-    }
+}
 
 export default Home;
