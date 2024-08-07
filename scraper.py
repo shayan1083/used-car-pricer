@@ -42,7 +42,7 @@ def get_car_makes_models():
 def get_car_trims(make,model):
     try:
         print("get_car_trims")
-        with open('dropdown_info/makes_models_to_trims', 'r') as f:
+        with open('dropdown_info/makes_models_to_trims.json', 'r') as f:
             data = json.load(f)
         models_to_trims = {
             tuple(key.split('_')): trims for key, trims in data.items()
@@ -57,7 +57,7 @@ def get_car_trims(make,model):
 def get_model_colors(make,model):
     try:
         print("get_model_colors")
-        with open('dropdown_info/makes_models_to_colors', 'r') as f:
+        with open('dropdown_info/makes_models_to_colors.json', 'r') as f:
             data = json.load(f)
         models_to_colors = {
             tuple(key.split('_')): colors for key, colors in data.items()

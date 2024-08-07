@@ -10,6 +10,7 @@
     "Acura_ILX": [
         "2.0L",
         "2.0L w/Tech",
+        "2.4L w/Premium",
         "8-Spd AT w/ Premium Package",
         "Base",
         "Premium & A-SPEC Packages",
@@ -350,6 +351,7 @@
         "3.0T quattro Prestige",
         "Premium Quattro Sedan 4D",
         "e quattro Premium Plus 55 TFSI",
+        "e quattro Prestige 55 TFSI",
         "quattro Premium Plus 55 TFSI",
         "quattro Prestige 55 TFSI"
     ],
@@ -588,6 +590,7 @@
     "Audi_TT": [
         "180hp",
         "2.0T",
+        "2.0T Premium Plus",
         "2.0T quattro",
         "2.0T quattro Premium",
         "2.0T quattro Premium Plus",
@@ -900,6 +903,9 @@
         "Sedan",
         "Special",
         "Standard"
+    ],
+    "Buick_Electra": [
+        "Park Avenue"
     ],
     "Buick_Enclave": [
         "Avenir",
@@ -1330,6 +1336,9 @@
         "LS",
         "RS"
     ],
+    "Chevrolet_Celebrity": [
+        "Base"
+    ],
     "Chevrolet_Chevy Cargo Van": [
         "G1500",
         "G20",
@@ -1552,6 +1561,7 @@
     "Chevrolet_Spark": [
         "1LT Auto",
         "1LT CVT",
+        "2LT Auto",
         "2LT CVT",
         "ACTIV CVT",
         "ACTIV Manual",
@@ -1599,6 +1609,7 @@
         "RS"
     ],
     "Chevrolet_TrailBlazer EXT": [
+        "4DR 4WD EXT LS",
         "4dr 2WD EXT LS",
         "4dr 2WD EXT LT",
         "4dr 4WD EXT LS",
@@ -1776,6 +1787,7 @@
     ],
     "Dodge_Caliber": [
         "Base",
+        "Express",
         "Mainstreet",
         "R/T",
         "SE",
@@ -1856,6 +1868,7 @@
     ],
     "Dodge_Intrepid": [
         "Base",
+        "ES",
         "R/T",
         "SE"
     ],
@@ -2060,6 +2073,7 @@
         "Black Diamond",
         "Everglades",
         "First Edition Advanced",
+        "Heritage Limited Edition",
         "Outer Banks",
         "Outer Banks Advanced",
         "Raptor",
@@ -2069,6 +2083,7 @@
         "Badlands",
         "Base",
         "Big Bend",
+        "First Edition",
         "Heritage",
         "Outer Banks"
     ],
@@ -2146,6 +2161,9 @@
     "Ford_Escape Plug-In Hybrid": [
         "SE",
         "Titanium"
+    ],
+    "Ford_Escort": [
+        "SE"
     ],
     "Ford_Expedition": [
         "Eddie Bauer",
@@ -2280,6 +2298,7 @@
     ],
     "Ford_Mustang": [
         "EcoBoost",
+        "Shelby GT350",
         "Shelby GT500"
     ],
     "Ford_Mustang Mach-E": [
@@ -2399,9 +2418,11 @@
         "K10 Utility HT 4WD",
         "SL",
         "SLE",
-        "SLS"
+        "SLS",
+        "Sport Utility 4D"
     ],
     "GMC_Safari": [
+        "Base",
         "Passenger Van AWD",
         "SL",
         "SLE",
@@ -2613,7 +2634,8 @@
         "4dr Sdn L4 CVT w/Leather",
         "CVT AT-PZEV",
         "Hybrid",
-        "Hybrid Sedan 4D"
+        "Hybrid Sedan 4D",
+        "Hybrid w/Leather"
     ],
     "Honda_Civic del Sol": [
         "S"
@@ -2667,6 +2689,7 @@
     "Honda_Odyssey": [
         "EX",
         "EX L w/DVD 4dr Mini Van",
+        "EX w/DVD",
         "EX-L",
         "EX-L Minivan 4D",
         "Elite",
@@ -2771,6 +2794,7 @@
         "3.8L",
         "3.8L V6",
         "4.6L V8",
+        "5.0L",
         "5.0L R-Spec"
     ],
     "Hyundai_Genesis Coupe": [
@@ -3025,6 +3049,7 @@
         "Anniversary Edition",
         "Base",
         "G37",
+        "G37 Coupe 2D",
         "IPL",
         "Journey",
         "Sport",
@@ -3290,7 +3315,8 @@
     ],
     "Jaguar_S-Type": [
         "3.0",
-        "4.0"
+        "4.0",
+        "4.2"
     ],
     "Jaguar_S-Type R": [
         "Base"
@@ -3333,6 +3359,7 @@
         "Portfolio",
         "Premium",
         "S",
+        "XF Portfolio Sedan 4D",
         "XFR"
     ],
     "Jaguar_XJ": [
@@ -3464,7 +3491,9 @@
     ],
     "Jeep_Grand Wagoneer L": [
         "Base",
+        "Grand Wagoneer L 4X4",
         "Grand Wagoneer L Series II 4X4",
+        "Grand Wagoneer L Series III 4X4",
         "SERIES II",
         "Series II",
         "Series III",
@@ -3516,7 +3545,11 @@
         "L Series II 4X4",
         "Series II",
         "Series II Carbide 4x4",
-        "Series III"
+        "Series III",
+        "Wagoneer L 4X2",
+        "Wagoneer L Carbide 4x4",
+        "Wagoneer L Series II 4X4",
+        "Wagoneer L Series III 4x4"
     ],
     "Jeep_Wrangler": [
         "Rubicon",
@@ -3555,6 +3588,7 @@
     ],
     "Kia_Borrego": [
         "EX",
+        "EX V8",
         "LX"
     ],
     "Kia_Cadenza": [
@@ -3566,7 +3600,6 @@
     "Kia_Carnival": [
         "EX",
         "LX",
-        "LXS",
         "SX",
         "SX Prestige"
     ],
@@ -3950,6 +3983,7 @@
     ],
     "Lexus_CT 200h": [
         "200H",
+        "200h",
         "5dr Sdn Hybrid",
         "Base",
         "CT 200h",
@@ -3967,6 +4001,7 @@
         "Base"
     ],
     "Lexus_ES 300h": [
+        "300h",
         "Base",
         "ES 300h",
         "F SPORT",
@@ -4241,7 +4276,11 @@
     ],
     "Lexus_TX 500h": [
         "500H F SPORT LUXURY",
+        "500h F SPORT Luxury",
+        "500h F SPORT Premium",
+        "F SPORT LUXURY",
         "F SPORT Luxury",
+        "TX 500h F SPORT",
         "TX 500h F SPORT Luxury",
         "TX 500h F SPORT Luxury AWD",
         "TX 500h F SPORT Premium"
@@ -4373,6 +4412,7 @@
         "Cartier",
         "Designer Series",
         "Executive",
+        "Executive L",
         "Signature",
         "Signature L",
         "Signature Limited",
@@ -5024,6 +5064,7 @@
         "XR7"
     ],
     "Mercury_Grand Marquis": [
+        "Colony Park LS",
         "GS",
         "LS",
         "LS Premium"
@@ -5075,6 +5116,9 @@
         "Premier"
     ],
     "Mercury_Villager": [
+        "Base"
+    ],
+    "Merkur_Scorpio": [
         "Base"
     ],
     "Mitsubishi_3000GT": [
@@ -5243,6 +5287,7 @@
         "NISMO Tech",
         "Roadster",
         "Roadster Touring",
+        "Roadster Touring Sport",
         "Sport",
         "Sport Tech",
         "Touring",
@@ -5250,6 +5295,7 @@
     ],
     "Nissan_Altima": [
         "2.0 SR",
+        "2.5",
         "2.5 Platinum",
         "2.5 S",
         "2.5 SL",
@@ -5392,7 +5438,8 @@
         "SL",
         "SL Minivan 4D",
         "SV",
-        "SV Minivan 4D"
+        "SV Minivan 4D",
+        "TAN"
     ],
     "Nissan_Rogue": [
         "Platinum",
@@ -5515,7 +5562,8 @@
     ],
     "Oldsmobile_Intrigue": [
         "Base",
-        "GL"
+        "GL",
+        "GLS"
     ],
     "Oldsmobile_Ninety-Eight": [
         "Regency Elite"
@@ -5677,6 +5725,7 @@
         "Turbo"
     ],
     "Porsche_Panamera": [
+        "10 Years Edition",
         "4",
         "4 E-Hybrid",
         "4 Edition",
@@ -5797,6 +5846,7 @@
         "2.0T WAGON SPORTCOMBI TOURING! WATCH THE VIDEO IN DESCRIPTION!",
         "2.0T XWD",
         "Aero",
+        "Aero SportCombi",
         "Arc",
         "Linear",
         "SE",
@@ -5891,6 +5941,7 @@
     ],
     "Scion_FR-S": [
         "10 Series",
+        "2dr Cpe Auto",
         "2dr Cpe Auto (Natl)",
         "2dr Cpe Man (Natl)",
         "6AT",
@@ -5947,12 +5998,14 @@
         "5-Door Hatchback 4-Spd AT",
         "5dr HB Auto (Natl)",
         "Base",
-        "Hatchback 4D"
+        "Hatchback 4D",
+        "Release Series 3.0"
     ],
     "Smart_Fortwo": [
         "Brabus",
         "passion",
         "passion cabrio",
+        "passion cabriolet",
         "pure"
     ],
     "Smart_Fortwo Electric Drive": [
@@ -6122,6 +6175,7 @@
     ],
     "Suzuki_Grand Vitara": [
         "Base",
+        "EX",
         "Limited",
         "Luxury",
         "Premium",
@@ -6153,7 +6207,8 @@
         "2dr Convertible",
         "4X4",
         "Base",
-        "JA"
+        "JA",
+        "JA AWD convertible"
     ],
     "Suzuki_Verona": [
         "S"
@@ -6479,6 +6534,7 @@
         "Two"
     ],
     "Toyota_Prius v": [
+        "BASE",
         "Five",
         "Four",
         "Three",
@@ -6740,6 +6796,7 @@
         "Base PZEV",
         "Driver's Edition",
         "Drivers Edition 4-Door",
+        "Wolfsburg",
         "Wolfsburg Edition",
         "Wolfsburg Edition Hatchback Sedan 4D"
     ],
@@ -6765,6 +6822,7 @@
         "1.8T SEL DSG",
         "1.8T SEL Manual",
         "S",
+        "S Manual 6 Speed",
         "SE",
         "SEL",
         "TSI S",
@@ -6823,6 +6881,7 @@
         "1.8T Sport",
         "2.5",
         "2.5L SE Sport Wagon 4D",
+        "GLI",
         "R-Line",
         "S",
         "SE",
@@ -7046,6 +7105,7 @@
     ],
     "Volvo_S90": [
         "B6 Inscription",
+        "B6 Momentum",
         "B6 Plus",
         "B6 Ultimate",
         "Base",
@@ -7146,6 +7206,7 @@
         "T6 Momentum",
         "T6 Platinum",
         "T6 Premier Plus",
+        "T6 R-Design",
         "T8 eAWD Inscription",
         "T8 eAWD R-Design"
     ],

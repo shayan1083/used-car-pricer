@@ -141,6 +141,7 @@
     "Buick": [
         "Cascada",
         "Century",
+        "Electra",
         "Enclave",
         "Encore",
         "Encore GX",
@@ -210,6 +211,7 @@
         "Caprice",
         "Captiva Sport",
         "Cavalier",
+        "Celebrity",
         "Chevy Cargo Van",
         "City Express Cargo",
         "Classic",
@@ -361,6 +363,7 @@
         "Escape",
         "Escape Hybrid",
         "Escape Plug-In Hybrid",
+        "Escort",
         "Expedition",
         "Expedition EL",
         "Expedition MAX",
@@ -870,6 +873,9 @@
         "Mountaineer",
         "Sable",
         "Villager"
+    ],
+    "Merkur": [
+        "Scorpio"
     ],
     "Mitsubishi": [
         "3000GT",
