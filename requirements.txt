@@ -11,3 +11,4 @@ xgboost
 pgeocode
 missingno
 category_encoders
+lightgbm
