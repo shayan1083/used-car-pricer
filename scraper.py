@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from playwright.async_api import async_playwright
+
 import pandas as pd
 import json
 import joblib
@@ -10,22 +10,6 @@ import pgeocode
 
 app = Flask(__name__)
 
-URL = 'https://www.iseecars.com/'
-
-async def check_webpage_loaded():
-    try:
-        async with async_playwright() as p:
-            browser = await p.chromium.launch()
-            page = await browser.new_page()
-            await page.goto(URL, wait_until="networkidle")
-            await page.wait_for_load_state("load")
-            page_source = await page.content()
-            await page.close()
-            await browser.close()
-        return page_source
-    except Exception as e:
-        print(e)
-        return 'error occured'
 
 def get_car_makes_models():
     try:
@@ -69,7 +53,7 @@ def get_model_colors(make,model):
         print(e)
         return []
 
-async def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive):
+def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive):
     regressor = joblib.load('random_forest_model.pkl')
     make_encoder = joblib.load('encoders/make_encoder.pkl')
     model_encoder = joblib.load('encoders/model_encoder.pkl')
@@ -125,20 +109,17 @@ def test():
     print("Home route accessed")
     return "Home route accessed", 200
 
-@app.route('/source', methods=['GET'])
-async def source():
-    text = await check_webpage_loaded()
-    return text, 200
+
 
 # get makes and models for each make
 @app.route('/makes-models', methods=['GET'])
-async def car_makes_models():
+def car_makes_models():
     makes, models = get_car_makes_models()
     return jsonify({'makes': makes, 'models': models})
 
 # get trims for the chosen make and model
 @app.route('/trims', methods=['GET'])
-async def trims():
+def trims():
     make = request.args.get('make')
     model = request.args.get('model')
     if not make or not model:
@@ -148,7 +129,7 @@ async def trims():
 
 # get colors for the chosen model
 @app.route('/colors', methods=['GET'])
-async def colors():
+def colors():
     make = request.args.get('make')
     model = request.args.get('model')
     if not make or not model:
@@ -158,7 +139,7 @@ async def colors():
 
 # perform analysis on data from excel file and predict a price
 @app.route('/predict', methods=['GET'])
-async def predict():
+def predict():
     print("predict route")
     try:
         make = request.args.get('make')
@@ -176,7 +157,7 @@ async def predict():
     except ValueError:
         return jsonify({'error': 'Invalid input values'}), 400
     # scrape data and perform machine learning'
-    predicted_value = await predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive)
+    predicted_value = predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive)
     return jsonify({'predicted_value': predicted_value})
 
 if __name__ == '__main__':
