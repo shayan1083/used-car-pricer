@@ -977,8 +977,7 @@
     ],
     "Buick_Park Avenue": [
         "Base",
-        "Ultra",
-        "Ultra Supercharged"
+        "Ultra"
     ],
     "Buick_Reatta": [
         "Base"
@@ -1794,7 +1793,6 @@
         "SXT"
     ],
     "Dodge_Caravan": [
-        "Base",
         "C/V",
         "SE",
         "SXT",
@@ -1868,7 +1866,6 @@
     ],
     "Dodge_Intrepid": [
         "Base",
-        "ES",
         "R/T",
         "SE"
     ],
@@ -2053,7 +2050,6 @@
     ],
     "Fiat_500e": [
         "Base",
-        "Beauty",
         "Inspi(RED)",
         "Music"
     ],
@@ -2073,7 +2069,6 @@
         "Black Diamond",
         "Everglades",
         "First Edition Advanced",
-        "Heritage Limited Edition",
         "Outer Banks",
         "Outer Banks Advanced",
         "Raptor",
@@ -2103,7 +2098,6 @@
         "Police Interceptor"
     ],
     "Ford_E-150": [
-        "Base",
         "XL"
     ],
     "Ford_E-250": [
@@ -2364,7 +2358,6 @@
         "LX Standard",
         "Limited",
         "SE",
-        "SE Sport",
         "SEL"
     ],
     "GMC_Acadia": [
@@ -2448,7 +2441,6 @@
         "Denali",
         "K1500 SLE",
         "SL2",
-        "SLE",
         "SLE Ext Cab 4x4",
         "SLE1",
         "SLT",
@@ -2994,7 +2986,6 @@
         "EX35 AWD",
         "EX35 Sport Utility 4D",
         "Journey",
-        "RWD 4dr",
         "Standard"
     ],
     "Infiniti_EX37": [
@@ -3064,8 +3055,7 @@
     "Infiniti_I30": [
         "Base",
         "LUXURY LOW 64K MILES 1 OWNER ACCIDENT FREE!!",
-        "Luxury",
-        "Touring"
+        "Luxury"
     ],
     "Infiniti_I35": [
         "Base"
@@ -3727,8 +3717,7 @@
         "S",
         "S Turbo",
         "SX",
-        "SX Turbo",
-        "X-Line"
+        "SX Turbo"
     ],
     "Kia_Sorento": [
         "EX",
@@ -4276,13 +4265,10 @@
     ],
     "Lexus_TX 500h": [
         "500H F SPORT LUXURY",
-        "500h F SPORT Luxury",
         "500h F SPORT Premium",
-        "F SPORT LUXURY",
         "F SPORT Luxury",
         "TX 500h F SPORT",
         "TX 500h F SPORT Luxury",
-        "TX 500h F SPORT Luxury AWD",
         "TX 500h F SPORT Premium"
     ],
     "Lexus_UX 200": [
@@ -4412,7 +4398,6 @@
         "Cartier",
         "Designer Series",
         "Executive",
-        "Executive L",
         "Signature",
         "Signature L",
         "Signature Limited",
@@ -4927,7 +4912,6 @@
         "EQE 500 4MATIC"
     ],
     "Mercedes-Benz_EQS": [
-        "AMG EQS",
         "EQS 450 4MATIC",
         "EQS 450+",
         "EQS 580 4MATIC"
@@ -5213,8 +5197,7 @@
     "Mitsubishi_Montero Sport": [
         "ES 2WD",
         "LS",
-        "LTD",
-        "XLS"
+        "LTD"
     ],
     "Mitsubishi_Outlander": [
         "Black Edition",
@@ -5438,8 +5421,7 @@
         "SL",
         "SL Minivan 4D",
         "SV",
-        "SV Minivan 4D",
-        "TAN"
+        "SV Minivan 4D"
     ],
     "Nissan_Rogue": [
         "Platinum",
@@ -5642,7 +5624,6 @@
     ],
     "Pontiac_Montana": [
         "1SE",
-        "4dr Ext WB w/Y3G Mobility Pkg",
         "Base",
         "MontanaVision",
         "Value"
@@ -5741,7 +5722,6 @@
         "S",
         "Standard",
         "Turbo",
-        "Turbo S E-Hybrid",
         "Turbo S E-Hybrid Sport Turismo",
         "Turbo Sport Turismo"
     ],
@@ -6005,7 +5985,6 @@
         "Brabus",
         "passion",
         "passion cabrio",
-        "passion cabriolet",
         "pure"
     ],
     "Smart_Fortwo Electric Drive": [
@@ -6122,7 +6101,6 @@
         "Base",
         "Limited",
         "Limited XT",
-        "Onyx Edition",
         "Onyx Edition XT",
         "Premium",
         "Touring XT",
@@ -6207,8 +6185,7 @@
         "2dr Convertible",
         "4X4",
         "Base",
-        "JA",
-        "JA AWD convertible"
+        "JA"
     ],
     "Suzuki_Verona": [
         "S"
@@ -6753,7 +6730,6 @@
         "R-Line Sedan 4D",
         "SPORT",
         "Sport",
-        "Sport (New Car Leftover)",
         "Sport PZEV",
         "Sport Plus",
         "Sport Plus PZEV",

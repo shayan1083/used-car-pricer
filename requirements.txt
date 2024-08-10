@@ -7,8 +7,7 @@ openpyxl
 ipykernel
 nbformat
 nbconvert
-xgboost
 pgeocode
 missingno
 category_encoders
-lightgbm
+bayesian-optimization

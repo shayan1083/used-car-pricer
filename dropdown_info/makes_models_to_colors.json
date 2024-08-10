@@ -87,7 +87,6 @@
         "Blue",
         "Casino White Pearl",
         "Formula Red",
-        "Laguna Beache Blue Pearl",
         "Nord Gray Metallic",
         "Nouvelle Blue Pearl",
         "Orange",
@@ -133,7 +132,6 @@
         "Gray",
         "Lakeshore Silver Metallic",
         "Pearl White",
-        "Red",
         "Silver",
         "Tan",
         "White",
@@ -353,7 +351,6 @@
         "Black",
         "Green",
         "Olive Green",
-        "Q Spirit Silver",
         "Silver",
         "Unknown",
         "nan"
@@ -422,8 +419,7 @@
         "Q Pentland Green",
         "Silver",
         "Stratus White Gloss",
-        "White",
-        "nan"
+        "White"
     ],
     "Aston Martin_Virage": [
         "Black",
@@ -496,7 +492,6 @@
         "Black",
         "Blue",
         "Brilliant Black",
-        "District Green Metallic",
         "Florett Silver Metallic",
         "Glacier White Metallic",
         "Gotland Green Metallic",
@@ -508,7 +503,6 @@
         "Moonlight Blue Metallic",
         "Mythos Black",
         "Mythos Black Metallic",
-        "Navarra Blue Metallic",
         "Off White",
         "Silver",
         "Terra Gray Metallic",
@@ -850,7 +844,6 @@
         "Daytona Gray Pearl Effect",
         "Daytona Gray Pearl Effect/Black Roof",
         "Gray",
-        "Green",
         "Ibis White",
         "Ice Silver Metallic",
         "Mythos Black Metallic",
@@ -863,7 +856,6 @@
         "Vegas Yellow",
         "Vegas Yellow/Black Roof",
         "White",
-        "Yellow",
         "nan"
     ],
     "Audi_RS 3": [
@@ -1259,7 +1251,6 @@
         "Kemora Gray Metallic",
         "Lt. Gray",
         "Mythos Black Metallic",
-        "Silver",
         "Suzuka Gray Metallic",
         "Tactical Green Metallic",
         "nan"
@@ -1522,8 +1513,7 @@
         "Saphire Black",
         "Silver Gray Metallic",
         "Silverstone Metallic",
-        "Tanzanite Blue Metallic",
-        "nan"
+        "Tanzanite Blue Metallic"
     ],
     "BMW_M8": [
         "Alpine White",
@@ -1625,7 +1615,6 @@
         "Black Sapphire Metallic",
         "Blue",
         "Brooklyn Gray Metallic",
-        "Brooklyn Grey Metallic",
         "Carbon Black Metallic",
         "Dark Graphite Metallic",
         "Flamenco Red Metallic",
@@ -1804,7 +1793,6 @@
         "Portimao Blue Metallic",
         "San Remo Green Metallic",
         "Skyscraper Grey Metallic",
-        "Sunset Orange Metallic",
         "Tanzanite Blue Ii Metallic"
     ],
     "BMW_i5": [
@@ -1834,7 +1822,6 @@
     ],
     "BMW_i8": [
         "Black",
-        "Blue",
         "Crystal White Pearl Meta",
         "Crystal White Pearl Metallic W/Bmw I Frozen Blue",
         "Crystal White Pearl Metallic w/ Frozen Grey Accent",
@@ -1886,7 +1873,6 @@
         "Gray",
         "Hallmark Metallic",
         "Ice",
-        "Midnight Emerald Metallic",
         "Moonbeam Metallic",
         "Onyx Metallic",
         "Orange",
@@ -2235,7 +2221,6 @@
         "nan"
     ],
     "Buick_Park Avenue": [
-        "Black",
         "Blue",
         "Bronze",
         "Dark Blue",
@@ -2499,14 +2484,11 @@
     ],
     "Cadillac_CT5-V": [
         "Argent Silver Metallic",
-        "Black",
         "Black Raven",
-        "Blue",
         "Coastal Blue Metallic",
         "Midnight Steel Metallic",
         "Radiant Red Tintcoat",
         "Rift Metallic",
-        "Silver",
         "Summit White",
         "Wave Metallic",
         "nan"
@@ -2693,7 +2675,6 @@
     "Cadillac_Escalade-V ESV": [
         "Black",
         "Black Raven",
-        "Crystal White Tricoat",
         "White",
         "nan"
     ],
@@ -2814,7 +2795,6 @@
         "Deep Sea Metallic",
         "Emerald Lake Metallic",
         "Infrared Tintcoat",
-        "Latte Metallic",
         "Midnight Sky Metallic",
         "Radiant Silver Metallic",
         "Red",
@@ -3255,7 +3235,6 @@
         "Blue w/ White Stripes",
         "Brown",
         "Burgundy",
-        "Gold",
         "Red",
         "White",
         "nan"
@@ -3286,7 +3265,6 @@
     "Chevrolet_Equinox EV": [
         "Black",
         "Galaxy Gray Metallic",
-        "Gjv",
         "Riptide Blue Metallic",
         "Sterling Gray Metallic",
         "Summit White",
@@ -3315,15 +3293,13 @@
         "Gray",
         "Imperial Blue Metallic",
         "Majestic Amethyst Metallic",
-        "Orange",
         "Purple",
         "Red",
         "Silver",
         "Silver Ice Metallic",
         "Tan",
         "Victory Red",
-        "White",
-        "nan"
+        "White"
     ],
     "Chevrolet_Impala": [
         "Black",
@@ -3477,7 +3453,6 @@
     ],
     "Chevrolet_S-10 Blazer": [
         "Blue",
-        "Orange",
         "Red",
         "nan"
     ],
@@ -3593,7 +3568,6 @@
         "Blue",
         "Burgundy",
         "Gray",
-        "Grey",
         "Light Pewter Metallic",
         "Lt. Gray",
         "Red",
@@ -3830,8 +3804,7 @@
         "Silver",
         "Silverstone Metallic",
         "Tan",
-        "White",
-        "nan"
+        "White"
     ],
     "Chevrolet_Venture": [
         "Burgundy",
@@ -3936,8 +3909,7 @@
         "Pearl",
         "Silver",
         "Tan",
-        "White",
-        "nan"
+        "White"
     ],
     "Chrysler_Cirrus": [
         "Burgundy",
@@ -3957,7 +3929,6 @@
         "Blue",
         "Burgundy",
         "Gray",
-        "Other",
         "Polar White",
         "Red",
         "Silver",
@@ -4034,7 +4005,6 @@
         "Black",
         "Blue Med",
         "Bright White Clearcoat",
-        "Brilliant Black Crystal Pearl Coat",
         "Brilliant Black Crystal Pearlcoat",
         "Ceramic Gray Clearcoat",
         "Fathom Blue Pearlcoat",
@@ -4174,14 +4144,12 @@
     "Dodge_Caravan": [
         "Aluminum",
         "Blue",
-        "Blue (Dark)",
         "Blue (Light)",
         "Butane Blue Pearlcoat",
         "Maroon",
         "Red",
         "Silver",
         "Steel Blue Pearl",
-        "Turquoise",
         "White",
         "nan"
     ],
@@ -4414,7 +4382,6 @@
         "Burgundy",
         "Gray",
         "Green",
-        "Gy",
         "Inferno Red Crystal Pearl",
         "Light Khaki Metallic Clearcoat",
         "Natural Green Pearl",
@@ -4504,8 +4471,7 @@
         "Inferno Red Tinted Pc",
         "Midnight Blue Pearl",
         "Red",
-        "Silver",
-        "nan"
+        "Silver"
     ],
     "Dodge_Viper": [
         "Black",
@@ -4528,13 +4494,11 @@
         "Yellow"
     ],
     "Ferrari_296 GTB": [
-        "Bianco Avus",
         "Blu Corsa",
         "Blu Nart",
         "Blu Tour De France Metallic",
         "Grigio Scuro",
         "Grigio Silverstone Metallic",
-        "Grigio Titanio Metallic",
         "Red",
         "Rosso Berlinetta",
         "Unknown",
@@ -4555,7 +4519,6 @@
     ],
     "Ferrari_458 Spider": [
         "Black",
-        "Grey",
         "Nero",
         "Red",
         "Rosso Corsa",
@@ -4721,15 +4684,13 @@
     "Ferrari_Portofino M": [
         "Blue",
         "Red",
-        "White",
-        "nan"
+        "White"
     ],
     "Ferrari_Roma": [
         "Black",
         "Blu Tour De France Metallic",
         "Blue",
         "Extracampionario",
-        "Giallo Modena",
         "Gray",
         "Grey",
         "Grigio Alloy Metallic",
@@ -4750,7 +4711,6 @@
         "Black",
         "Gray",
         "Green",
-        "Red",
         "Rosso Corsa",
         "Rosso Scuderia",
         "Silver",
@@ -4842,7 +4802,6 @@
         "Blue",
         "Electric Orange Tri-Coat Pearl Coat",
         "Glacier White",
-        "Gold",
         "Granito Gray",
         "Granito Lucente (Granite Crystal)",
         "Gray",
@@ -4896,8 +4855,7 @@
         "Rapid Red Metallic Tinted Clearcoat",
         "Shadow Black",
         "Velocity Blue Metallic",
-        "White",
-        "nan"
+        "White"
     ],
     "Ford_Bronco Sport": [
         "Alto Blue Metallic Tinted Clearcoat",
@@ -4937,7 +4895,6 @@
         "Magnetic Metallic",
         "Oxford White",
         "Red",
-        "Ruby Red",
         "Shadow Black",
         "Silver",
         "Sterling Gray",
@@ -5131,7 +5088,6 @@
         "nan"
     ],
     "Ford_Escape Plug-In Hybrid": [
-        "Agate Black Metallic",
         "Black Metallic",
         "Iced Blue Silver Metallic",
         "Rapid Red Metallic Tinted Clearcoat",
@@ -5366,7 +5322,6 @@
         "Oxford White",
         "Rapid Red Metallic Tinted Clearcoat",
         "Silver",
-        "Star White",
         "Star White Metallic Tri-Coat",
         "Unknown"
     ],
@@ -5409,7 +5364,6 @@
         "Red",
         "Silver",
         "Silver Frost Clearcoat Metallic",
-        "Squeak",
         "Tan",
         "Titanium Green Metallic",
         "White",
@@ -5645,7 +5599,6 @@
         "Carbonized Gray Metallic",
         "Dark Matter Gray Metallic",
         "Eruption Green Metallic",
-        "Glacier Gray Metallic",
         "Glacier Gray Metallic Tricoat",
         "Iced Blue Silver Metallic",
         "Infinite Blue Metallic Tinted Clearcoat",
@@ -5813,13 +5766,10 @@
     "Ford_Windstar": [
         "Beige",
         "Blue",
-        "Burgundy",
         "Estate Green Metallic",
         "French Silk",
         "Gold",
-        "Gray",
         "Green",
-        "Silver",
         "White"
     ],
     "GMC_Acadia": [
@@ -5892,7 +5842,6 @@
         "Cyber Gray Metallic",
         "Dark Sky Metallic",
         "Desert Sand Metallic",
-        "Dynamic Blue Metallic",
         "Gray",
         "Onyx Black",
         "Red",
@@ -5929,7 +5878,6 @@
     "GMC_Envoy XL": [
         "Beige",
         "Black",
-        "Blue",
         "Dk. Gray",
         "Green",
         "Liquid Silver Metallic",
@@ -6020,8 +5968,7 @@
         "Silver Birch Metallic",
         "Summit White",
         "Tan",
-        "White",
-        "nan"
+        "White"
     ],
     "GMC_Sierra 1500 Hybrid": [
         "Aluminum",
@@ -6160,10 +6107,8 @@
     "Genesis_Electrified GV70": [
         "Alta White",
         "Makalu Gray",
-        "Makalu Gray Matte",
         "Savile Silver",
-        "Vik Black",
-        "nan"
+        "Vik Black"
     ],
     "Genesis_G70": [
         "Adriatic Blue",
@@ -6682,9 +6627,6 @@
         "White"
     ],
     "Honda_Prologue": [
-        "Black Pearl",
-        "Bv",
-        "Bx",
         "Gn",
         "Gn/North_Shore_Pea",
         "Green",
@@ -6696,7 +6638,6 @@
         "Scarlet Red Metallic",
         "Snowfall Pearl",
         "Sonic Gray Pearl",
-        "Sx",
         "Wx"
     ],
     "Honda_Ridgeline": [
@@ -7051,7 +6992,6 @@
         "Ceramic Blue",
         "Chalk White",
         "Chalk White/Black Roof",
-        "Cyber Gray Metallic",
         "Galactic Gray",
         "Galactic Gray W/White",
         "Gray",
@@ -7363,8 +7303,7 @@
         "Silver",
         "Stellar Silver",
         "Ultimate Red",
-        "White",
-        "nan"
+        "White"
     ],
     "Hyundai_Veracruz": [
         "Black",
@@ -7438,7 +7377,6 @@
         "Blue",
         "Blue Slate",
         "Bronze",
-        "Brown",
         "Diamond Graphite Metalli",
         "Golden Sand",
         "Gray",
@@ -7514,7 +7452,6 @@
         "Champagne",
         "Gray",
         "Pearl White",
-        "Red",
         "Silver",
         "Sliver",
         "White",
@@ -7581,7 +7518,6 @@
     ],
     "Infiniti_I30": [
         "Aspen White",
-        "Aspen White Pearl",
         "Autumn Bronze",
         "Bronze",
         "Gray",
@@ -7685,7 +7621,6 @@
         "Black Obsidian",
         "Graphite Shadow",
         "Gray",
-        "Grey",
         "Liquid Platinum",
         "Moonlight White",
         "Silver",
@@ -7957,8 +7892,7 @@
         "Olympic White"
     ],
     "Isuzu_Pickup": [
-        "Blue",
-        "nan"
+        "Blue"
     ],
     "Isuzu_Rodeo": [
         "Blue",
@@ -7995,7 +7929,6 @@
         "Indus Silver Metallic",
         "Narvik Black",
         "Ostuni Pearl White",
-        "Ostuni Pearl White Metallic",
         "Photon Red",
         "Red",
         "Santorini Black Metallic",
@@ -8076,7 +8009,6 @@
     "Jaguar_I-PACE": [
         "Black",
         "Borasco Grey",
-        "Caesium Blue Metallic",
         "Carpathian Grey Premium Metallic",
         "Carpathian Grey in Satin Finish",
         "Corris Grey Metallic",
@@ -8333,13 +8265,10 @@
         "Beige",
         "Black",
         "Blue",
-        "Brown",
-        "Burgun",
         "Cream",
         "Gold",
         "Gray",
         "Green",
-        "Orange",
         "Other",
         "Red",
         "Silver",
@@ -8528,7 +8457,6 @@
         "Diamond Black Crystal Pearlcoat",
         "Gray",
         "Midnight Sky",
-        "Red",
         "Silver",
         "Silver Zynith",
         "White",
@@ -8604,7 +8532,6 @@
         "Jamaican Beige",
         "Orange",
         "Other",
-        "Silver",
         "White"
     ],
     "Jeep_Wagoneer": [
@@ -8635,7 +8562,6 @@
         "Red",
         "Riverrock Green",
         "Silver",
-        "Silver Zynith",
         "Velvet Red Pearl-Coat Paint",
         "Velvet Red Pearlcoat",
         "White",
@@ -9195,7 +9121,6 @@
         "Red",
         "Silver",
         "Silver or Aluminum",
-        "Tan",
         "White",
         "nan"
     ],
@@ -9364,7 +9289,6 @@
         "Silver",
         "Tan",
         "Unknown",
-        "Verde Egeria and Arancio Atlas",
         "Verde Mantis",
         "Verde Mantis Metallic",
         "Verde Mantis Pearl",
@@ -9383,7 +9307,6 @@
         "Yellow"
     ],
     "Lamborghini_Urus": [
-        "Bianco Icarus",
         "Bianco Icarus Metallic",
         "Bianco Monocerus",
         "Bianco Monocerus Matt/Arancio Ar",
@@ -9462,7 +9385,6 @@
         "Eiger Grey Metallic",
         "Firenze Red Metallic",
         "Fuji White",
-        "Gray",
         "Hakuba Silver Metallic",
         "Indus Silver Metallic",
         "Loire Blue Metallic",
@@ -10063,7 +9985,6 @@
         "Red",
         "Ultra White",
         "Ultrasonic Blue 2.0",
-        "Unknown",
         "White",
         "nan"
     ],
@@ -10089,7 +10010,6 @@
         "Red",
         "Silver",
         "Smoky Granite Mica",
-        "Structural Blue",
         "Ultra White",
         "Ultrasonic Blue Mica 2.0",
         "White",
@@ -10180,7 +10100,6 @@
         "Black",
         "Champagne Pearl",
         "Dark Green",
-        "Tan",
         "White"
     ],
     "Lexus_LX 470": [
@@ -10376,7 +10295,6 @@
         "Blue",
         "Cloudburst Gray",
         "Gray",
-        "Incognito",
         "Infrared",
         "Liquid Platinum",
         "Nebula Gray Pearl",
@@ -10392,7 +10310,6 @@
         "Aluminum",
         "Black",
         "Blue",
-        "Blue,Light",
         "Brown",
         "Broze",
         "Burnished Gold Metallic",
@@ -10618,12 +10535,10 @@
         "Wind Chill Pearl"
     ],
     "Lexus_TX 500h": [
-        "Black",
         "Caviar",
         "Celestial Silver Metallic",
         "Gray",
         "Incognito",
-        "Ultra White",
         "Wind Chill Pearl",
         "nan"
     ],
@@ -11067,8 +10982,6 @@
         "Ceramic Pearl Metallic Tri-Coat",
         "Chroma Caviar Dark Gray Metallic Clearcoat",
         "Chroma Crystal Blue Metallic Premium Colorant",
-        "Diamond Red Metallic Tinted Clearcoat",
-        "Flight Blue Metallic Clearcoat",
         "Gld",
         "Green Gem",
         "Infinite Black Metallic",
@@ -11106,7 +11019,6 @@
         "Silver",
         "Silver Birch Clearcoat Metallic",
         "Silver Birch Metallic",
-        "Silver Frost",
         "Silver Frost Clearcoat Metallic",
         "Silver Metalic Frost",
         "Tan",
@@ -11284,7 +11196,6 @@
         "Bianco Alpi Tri-Coat",
         "Black",
         "Blu Emozione Metallic",
-        "Blu Nobile Tri-Coat",
         "Blue",
         "Blue Emozione Mica",
         "Blue Nobile Tri-Coat",
@@ -11663,7 +11574,6 @@
     ],
     "Mazda_MAZDASPEED MX-5": [
         "Ong",
-        "Orange",
         "Red",
         "Silver",
         "Titanium Gray Metallic",
@@ -11685,16 +11595,14 @@
     ],
     "Mazda_MAZDASPEED6": [
         "Liquid Platinum Mica",
-        "Red",
-        "Silver"
+        "Red"
     ],
     "Mazda_MPV": [
         "Beige",
         "Blue",
         "Silver",
         "Tan",
-        "White",
-        "nan"
+        "White"
     ],
     "Mazda_MX-30 EV": [
         "Jet Black Mica",
@@ -11753,7 +11661,6 @@
     ],
     "Mazda_RX-7": [
         "Black",
-        "Blue",
         "Red",
         "Silver",
         "White"
@@ -11918,7 +11825,6 @@
         "Orange",
         "Other",
         "Silver",
-        "White",
         "Yellow"
     ],
     "McLaren_MP4-12C": [
@@ -12258,7 +12164,6 @@
         "Graphite Grey Metallic",
         "Manufaktur Alpine Grey",
         "Manufaktur Graphite Grey Magno",
-        "Manufaktur Moonlight White Metallic",
         "Obsidian Black Metallic",
         "Polar White",
         "Selenite Grey Metallic",
@@ -12574,7 +12479,6 @@
         "Red",
         "Selenite Grey Metallic",
         "Silver",
-        "Starling Blue Metallic",
         "Tan",
         "Unknown",
         "White",
@@ -12591,7 +12495,6 @@
         "Obsidian Black Metallic",
         "Polar White",
         "Red",
-        "Selenite Grey Metallic",
         "Silver",
         "White",
         "nan"
@@ -12753,8 +12656,7 @@
         "Silver",
         "White",
         "White Platinum Metallic Tri-Coat",
-        "White Suede",
-        "nan"
+        "White Suede"
     ],
     "Mercury_Sable": [
         "Aluminum",
@@ -12851,8 +12753,6 @@
         "Blue",
         "Burgundy",
         "Carbon Pearl",
-        "Gray",
-        "Maroon",
         "Pewter",
         "Quick Silver Pearl",
         "Silver",
@@ -12977,7 +12877,6 @@
         "White"
     ],
     "Mitsubishi_Montero Sport": [
-        "Black",
         "Cambridge Red Pearl",
         "Silver",
         "White"
@@ -13307,7 +13206,6 @@
         "Red",
         "Scarlet Ember",
         "Scarlet Ember Tintcoat",
-        "Scarlet Ember Tintcoat/Super Black",
         "Silver",
         "Super Black",
         "Whi",
@@ -13706,14 +13604,11 @@
         "Boulder Gray/Super Black",
         "Brilliant Silver/Super Black",
         "Everest White Pearl Tricoat/Super Black",
-        "Gray",
         "Gun Metallic",
         "Ikazuchi Yellow Pearl Tricoat/Super Black",
-        "Rosewood Metallic",
         "Seiran Blue Metallic/Super Black",
         "Silver",
-        "Stealth Gray/Super Black",
-        "White"
+        "Stealth Gray/Super Black"
     ],
     "Oldsmobile_Alero": [
         "Ruby Red",
@@ -13775,8 +13670,7 @@
     ],
     "Oldsmobile_Eighty-Eight": [
         "Arctic White",
-        "Red",
-        "nan"
+        "Red"
     ],
     "Oldsmobile_Eighty-Eight Royale": [
         "Red",
@@ -13810,7 +13704,6 @@
         "Black",
         "Burgundy",
         "Orange",
-        "Other Color",
         "Prowler Black Clearcoat",
         "Prowler Silver",
         "Prowler Yellow",
@@ -13818,7 +13711,6 @@
         "Red",
         "Silver",
         "Silver/Black",
-        "Unknown",
         "Yellow",
         "nan"
     ],
@@ -13855,12 +13747,10 @@
         "Red",
         "Silver",
         "Silver Metallic",
-        "White",
-        "nan"
+        "White"
     ],
     "Pontiac_Firebird": [
-        "Black",
-        "Brown"
+        "Black"
     ],
     "Pontiac_G5": [
         "Black",
@@ -13935,7 +13825,6 @@
     "Pontiac_Montana": [
         "Blue",
         "Green",
-        "Red",
         "White"
     ],
     "Pontiac_Montana SV6": [
@@ -14018,8 +13907,6 @@
         "Black",
         "Blue",
         "Carrara White Metallic",
-        "Gray",
-        "Purple",
         "Vanadium Grey Metallic",
         "White"
     ],
@@ -14126,7 +14013,6 @@
     "Porsche_Panamera": [
         "Agate Gray Metallic",
         "Amethyst Metallic",
-        "Aventurine Green Metallic",
         "Basalt Black Metallic",
         "Beige",
         "Black",
@@ -14570,8 +14456,7 @@
         "Silver",
         "Silver Blue",
         "Tan",
-        "White",
-        "nan"
+        "White"
     ],
     "Saturn_Sky": [
         "Aluminum",
@@ -14603,7 +14488,6 @@
         "Deep Blue",
         "Gold",
         "Gray",
-        "Green",
         "Green (Light)",
         "Red",
         "Ruby Red",
@@ -14958,7 +14842,6 @@
         "Deep Indigo Pearl",
         "Gold",
         "Gray",
-        "Ice Silver",
         "Ice Silver Metallic",
         "Magnetite Gray Metallic",
         "Satin White Pearl",
@@ -15003,7 +14886,6 @@
         "Blue"
     ],
     "Subaru_Solterra": [
-        "Black",
         "Cm3",
         "Cosmic White Pearl",
         "Cosmic White Pearl 2-Tone",
@@ -15016,7 +14898,6 @@
         "Smoked Carbon",
         "Smoked Carbon 2-Tone",
         "Smoked Carbon, Two Tone",
-        "White",
         "nan"
     ],
     "Subaru_Tribeca": [
@@ -15149,12 +15030,10 @@
         "Blue",
         "Red",
         "Silver",
-        "Yellow",
-        "nan"
+        "Yellow"
     ],
     "Suzuki_Verona": [
-        "Blue",
-        "nan"
+        "Blue"
     ],
     "Suzuki_XL-7": [
         "Beige",
@@ -15166,8 +15045,7 @@
         "Maroon",
         "Pearl White Tri-Coat",
         "Silver",
-        "White",
-        "nan"
+        "White"
     ],
     "Tesla_Model 3": [
         "Black",
@@ -15471,7 +15349,6 @@
         "Celestite",
         "Gray",
         "Jet Black",
-        "Off-White",
         "Red",
         "Silver",
         "Sonic Silver",
@@ -15480,19 +15357,13 @@
         "nan"
     ],
     "Toyota_Corolla Cross Hybrid": [
-        "Barcelona Red Metallic",
         "Barcelona Red Metallic/Jet Black",
-        "Black",
         "Blue Crush Metallic",
-        "Blue Crush Metallic/Jet Black",
         "Celestite",
-        "Celestite/Jet Black",
-        "Gray",
         "Jet Black",
         "Red",
         "Silver",
         "Sonic Silver",
-        "Sonic Silver/Jet Black",
         "Sonic Silverjet Blue",
         "Unknown",
         "Wind Chill Pearl",
@@ -15527,7 +15398,6 @@
         "Ice Cap",
         "Midnight Black Metallic",
         "Ruby Flare Pearl",
-        "Silver",
         "Underground",
         "Unknown",
         "White",
@@ -15599,7 +15469,6 @@
     ],
     "Toyota_GR Corolla": [
         "Black",
-        "Blue",
         "Blue Flame",
         "Gray",
         "Heavy Metal",
@@ -15656,7 +15525,6 @@
         "Black",
         "Blueprint",
         "Celestial Silver Metallic",
-        "Coastal Cream",
         "Midnight Black Metallic",
         "Red",
         "Ruby Flare Pearl",
@@ -15672,7 +15540,6 @@
         "Blue",
         "Blueprint",
         "Celestial Silver Metallic",
-        "Coastal Cream",
         "Maroon",
         "Midnight Black Metallic",
         "Off-White",
@@ -15752,7 +15619,6 @@
         "Heritage Blue/Gray Scape",
         "Ice Cap",
         "Meteor Shower",
-        "Meteorite",
         "Midnight Black Metallic",
         "Silver",
         "Tan",
@@ -15760,8 +15626,7 @@
         "Underground",
         "Unknown",
         "White",
-        "Wind Chill Pearl",
-        "nan"
+        "Wind Chill Pearl"
     ],
     "Toyota_MR2": [
         "Black",
@@ -15810,7 +15675,6 @@
         "Gray",
         "Green",
         "Other",
-        "Other Color",
         "Red",
         "Silver",
         "Tan",
@@ -16136,8 +16000,7 @@
         "Unknown",
         "Wh",
         "White",
-        "Wind Chill Pearl",
-        "nan"
+        "Wind Chill Pearl"
     ],
     "Toyota_Yaris": [
         "Absolutely Red",
@@ -16195,7 +16058,6 @@
         "Elemental Silver Metallic W/Black Roof",
         "Heavy Metal",
         "Supersonic Red",
-        "Supersonic Red W/Black Roof",
         "Wind Chill Pearl",
         "Wind Chill Pearl W/Black Roof",
         "nan"
@@ -16261,7 +16123,6 @@
         "Black",
         "Black Uni",
         "Blue",
-        "Brown",
         "Candy White",
         "Charcoal",
         "Deep Black",
@@ -16700,8 +16561,7 @@
         "Burgundy",
         "Charcoal",
         "Galapagos Gray",
-        "Tan",
-        "Whi"
+        "Tan"
     ],
     "Volkswagen_Vanagon": [
         "Beige",
@@ -16847,7 +16707,6 @@
         "Beige",
         "Black",
         "Blue",
-        "Bronze",
         "Brown",
         "Crystal White Pearl",
         "Electric Silver Metallic",
@@ -16909,8 +16768,7 @@
         "nan"
     ],
     "Volvo_V40": [
-        "Silver",
-        "White"
+        "Silver"
     ],
     "Volvo_V50": [
         "Black",
@@ -16980,7 +16838,6 @@
         "Onyx Black Metallic",
         "Osmium Gray Metallic",
         "Osmium Grey Metallic",
-        "Silver",
         "Silver Dawn Metallic",
         "nan"
     ],
@@ -16994,8 +16851,7 @@
         "Silver",
         "Silver Metallic",
         "Tan",
-        "White",
-        "nan"
+        "White"
     ],
     "Volvo_V90": [
         "Mussel Blue Metallic",

@@ -25,4 +25,4 @@ car-price-app/yarn-error.log*
 venv/*
 __pycache__/*
 
-random_forest_model.pkl
+*.pkl

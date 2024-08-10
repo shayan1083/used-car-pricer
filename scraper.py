@@ -54,7 +54,7 @@ def get_model_colors(make,model):
         return []
 
 def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive):
-    regressor = joblib.load('random_forest_model.pkl')
+    regressor = joblib.load('mae_3366.pkl')
     make_encoder = joblib.load('encoders/make_encoder.pkl')
     model_encoder = joblib.load('encoders/model_encoder.pkl')
     trim_encoder = joblib.load('encoders/trim_encoder.pkl')
