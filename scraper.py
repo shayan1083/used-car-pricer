@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 import pandas as pd
 import json
-import joblib
+import pickle
 import datetime
 import pgeocode
 
@@ -54,25 +54,34 @@ def get_model_colors(make,model):
         return []
 
 def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive):
-    regressor = joblib.load('mae_3366.pkl')
-    make_encoder = joblib.load('encoders/make_encoder.pkl')
-    model_encoder = joblib.load('encoders/model_encoder.pkl')
-    trim_encoder = joblib.load('encoders/trim_encoder.pkl')
-    color_encoder = joblib.load('encoders/color_encoder.pkl')
-    encoder = joblib.load('encoders/onehotencoder.pkl')
+    with open('model.pkl', 'rb') as f:
+        regressor = pickle.load(f)
+    with open('encoders/make_encoder.pkl', 'rb') as f:
+        make_encoder = pickle.load(f)
+
+    with open('encoders/model_encoder.pkl', 'rb') as f:
+        model_encoder = pickle.load(f)
+
+    with open('encoders/trim_encoder.pkl', 'rb') as f:
+        trim_encoder = pickle.load(f)
+
+    with open('encoders/color_encoder.pkl', 'rb') as f:
+        color_encoder = pickle.load(f)
+    with open('encoders/onehotencoder.pkl', 'rb') as f:
+        encoder = pickle.load(f)
     new_car = pd.DataFrame({
-    'Make':[make],
-    'Model':[model],
-    'Age':[year],
-    'Trim':[trim],
-    'Mileage':mileage,
-    'Color':[color],
-    'Engine_Size':engine,
-    'Gas_Mileage':gas,
-    'Location':[location],
-    'Transmission':[transmission],
-    'Fuel_Type':[fuel],
-    'Drive_Type':[drive],
+        'Make':[make],
+        'Model':[model],
+        'Age':[year],
+        'Trim':[trim],
+        'Mileage':mileage,
+        'Color':[color],
+        'Engine_Size':engine,
+        'Gas_Mileage':gas,
+        'Location':[location],
+        'Transmission':[transmission],
+        'Fuel_Type':[fuel],
+        'Drive_Type':[drive],
     })
 
     # replace year with age
@@ -87,6 +96,7 @@ def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmi
     new_car = new_car.drop(columns=['Location'])
 
     # target encoding
+
     new_car['Make'] = make_encoder.transform(new_car['Make'])
     new_car['Model'] = model_encoder.transform(new_car['Model'])
     new_car['Trim'] = trim_encoder.transform(new_car['Trim'])
@@ -98,6 +108,8 @@ def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmi
 
     one_hot_encoded_new_car_df = pd.DataFrame(one_hot_encoded_new_car, columns=encoder.get_feature_names_out())
     new_car = pd.concat([new_car.drop(columns=['Transmission', 'Fuel_Type', 'Drive_Type']), one_hot_encoded_new_car_df], axis=1)
+    
+    print(new_car)
 
     predicted_price = regressor.predict(new_car)
     return predicted_price[0]
@@ -108,8 +120,6 @@ def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmi
 def test():
     print("Home route accessed")
     return "Home route accessed", 200
-
-
 
 # get makes and models for each make
 @app.route('/makes-models', methods=['GET'])
@@ -137,28 +147,28 @@ def colors():
     colors = get_model_colors(make,model)
     return jsonify({'colors': colors})
 
-# perform analysis on data from excel file and predict a price
-@app.route('/predict', methods=['GET'])
+# use trained model to predict a price
+@app.route('/predict', methods=['POST'])
 def predict():
-    print("predict route")
     try:
-        make = request.args.get('make')
-        model = request.args.get('model')
-        year = int(request.args.get('year'))
-        trim = request.args.get('trim')
-        mileage = int(request.args.get('mileage'))
-        color = request.args.get('color')
-        engine = float(request.args.get('engine'))
-        gas = float(request.args.get('gas'))
-        location = request.args.get('location')
-        transmission = request.args.get('transmission')
-        fuel = request.args.get('fuel')
-        drive = request.args.get('drive')
+        make = request.json['make']
+        model = request.json['model']
+        year = int(request.json['year'])
+        trim = request.json['trim']
+        mileage = int(request.json['mileage'])
+        color = request.json['color']
+        engine = float(request.json['engineSize'])
+        gas = float(request.json['gasMileage'])
+        location = request.json['location']
+        transmission = request.json['transmission']
+        fuel = request.json['fuelType']
+        drive = request.json['driveType']
     except ValueError:
         return jsonify({'error': 'Invalid input values'}), 400
     # scrape data and perform machine learning'
     predicted_value = predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive)
     return jsonify({'predicted_value': predicted_value})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
