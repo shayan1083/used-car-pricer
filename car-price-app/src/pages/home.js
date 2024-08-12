@@ -7,18 +7,18 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import '../App.css'
 
 const schema = yup.object().shape({
-    make: yup.string().required("Please select car make"),
-    model: yup.string().required("Please select car model"),
-    year: yup.string().required("Year is required"),
-    trim: yup.string().required("Please select car trim"),
-    color: yup.string().required("Please select car color"),
-    mileage: yup.string().required("Please select car mileage"),
-    gasMileage: yup.string().required("Please select car gas mileage"),
-    engineSize: yup.string().required("Please select car engine size"),
-    transmission: yup.string().required("Please select car transmission"),
-    driveType: yup.string().required("Please select car drive type"),
-    location: yup.string().required("Please enter zip code"),
-    fuelType: yup.string().required("Please select car fuel type"),
+    make: yup.string().required("Please select Make"),
+    model: yup.string().required("Please select Model"),
+    year: yup.string().required("Year is Required"),
+    trim: yup.string().required("Please select Trim"),
+    color: yup.string().required("Please select Color"),
+    mileage: yup.string().required("Please select Mileage"),
+    gasMileage: yup.string().required("Please select Gas Mileage"),
+    engineSize: yup.string().required("Please select car Engine Size"),
+    transmission: yup.string().required("Please select Car Transmission"),
+    driveType: yup.string().required("Please select Drive Type"),
+    location: yup.string().required("Please enter Zip Code"),
+    fuelType: yup.string().required("Please select Fuel Type"),
 
 });
 
@@ -54,6 +54,8 @@ const Home = () => {
         const [smodel, setSModel] = useState();
         const [carTrims, setCarTrims] = useState();
         const [carColor, setCarColor] = useState();
+        const [engineSize, setEngineSize] = useState();
+        const [gasMileage, setGasMileage] = useState();
         const transmissions = ['Automatic', 'Manual', 'CVT'];
         const driveTypes = ['FWD', 'AWD', 'RWD'];
         const fuelTypes = ['Gas', 'Hybrid', 'Electric']
@@ -73,9 +75,20 @@ const Home = () => {
             }
             const trims_list = await trims.json()
             const color_list = await colors.json()
-            console.log(trims_list)
             setCarTrims(trims_list.trims);
             setCarColor(color_list.colors);
+        }
+
+        const getExtraData = async (trim) => {
+            const sizes = await fetch(`/enginesize?make=${getValues('make')}&model=${getValues('model')}&trim=${trim}`)
+            const gasmileage = await fetch(`/gasmileage?make=${getValues('make')}&model=${getValues('model')}&trim=${trim}`)
+            if (!sizes.ok || !gasmileage.ok) {
+                throw new Error('Network response was not ok')
+            }
+            const sizesList = await sizes.json()
+            const gasmileageList = await gasmileage.json()
+            setEngineSize(sizesList)
+            setGasMileage(gasmileageList)
         }
 
         const ErrorMessage = (message) => {
@@ -119,12 +132,12 @@ const Home = () => {
         return (
             <>
                 <Container className='w-75 mt-4' >
-                    {price && <Alert variant='success'>Car Pridicted Price : <b>{price}</b></Alert>}
+                    {price && <Alert variant='success'>Car Predicted Price : $<b>{price}</b></Alert>}
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <Card className="bg-light" style={{ borderRadius: 0 }} >
                             <Card.Body>
                                 <Card.Title>Enter Car Information </Card.Title><hr></hr>
-
+                                {/* Make */}
                                 <Row className="mb-3">
                                     <Col md="2" >Make</Col>
                                     <Col md="10" >
@@ -139,7 +152,7 @@ const Home = () => {
                                         {errors && errors.make?.message && <ErrorMessage message={errors.make?.message} />}
                                     </Col>
                                 </Row>
-
+                                {/* Model */}
                                 <Row className="mb-3" >
                                     <Col md="2" >Model</Col>
                                     <Col md="10" >
@@ -152,19 +165,19 @@ const Home = () => {
                                         {errors && errors.model?.message && <ErrorMessage message={errors.model?.message} />}
                                     </Col>
                                 </Row>
-
+                                {/* Year */}
                                 <Row className="mb-3" >
                                     <Col md="2" >Year</Col>
                                     <Col md="10" >
-                                        <Form.Control type="text" placeholder="year" {...register("year")} />
+                                        <Form.Control type="text" placeholder="Year" {...register("year")} />
                                         {errors && errors.year?.message && <ErrorMessage message={errors.year?.message} />}
                                     </Col>
                                 </Row>
-
+                                {/* Trim */}
                                 <Row className="mb-3">
                                     <Col md="2" >Trim</Col>
                                     <Col md="10" >
-                                        <Form.Select {...register("trim")}  >
+                                        <Form.Select {...register("trim")} onChange={(e) => getExtraData(e.target.value)}>
                                             <option value='' >Select Trim</option>
                                             {carTrims && carTrims.map(t => (
                                                 <option key={t} value={t}>{t}</option>
@@ -173,7 +186,7 @@ const Home = () => {
                                         {errors && errors.trim?.message && <ErrorMessage message={errors.trim?.message} />}
                                     </Col>
                                 </Row>
-
+                                {/* Color */}
                                 <Row className="mb-3">
                                     <Col md="2" >Color</Col>
                                     <Col md="10" >
@@ -186,19 +199,19 @@ const Home = () => {
                                         {errors && errors.color?.message && <ErrorMessage message={errors.color?.message} />}
                                     </Col>
                                 </Row>
-
+                                {/* Mileage */}
                                 <Row className="mb-3">
                                     <Col md="2" >Mileage</Col>
                                     <Col md="10" >
-                                        <Form.Control type="text" placeholder="mileage" {...register("mileage")} />
+                                        <Form.Control type="text" placeholder="Mileage" {...register("mileage")} />
                                         {errors && errors.mileage?.message && <ErrorMessage message={errors.mileage?.message} />}
                                     </Col>
                                 </Row>
-
+                                {/* Engine Size */}
                                 <Row className="mb-3">
                                     <Col md="2" >Engine Size</Col>
                                     <Col md="10" >
-                                        <Form.Control type="text" placeholder="engineSize" {...register("engineSize")} />
+                                        <Form.Control type="text" placeholder="Engine Size" {...register("engineSize")} />
                                         {errors && errors.engineSize?.message && <ErrorMessage message={errors.engineSize?.message} />}
                                     </Col>
                                 </Row>
@@ -206,7 +219,7 @@ const Home = () => {
                                 <Row className="mb-3">
                                     <Col md="2" >Gas Mileage</Col>
                                     <Col md="10" >
-                                        <Form.Control type="text" placeholder="gas milage" {...register("gasMileage")} />
+                                        <Form.Control type="text" placeholder="Gas Mileage" {...register("gasMileage")} />
                                         {errors && errors.gasMileage?.message && <ErrorMessage message={errors.gasMileage?.message} />}
                                     </Col>
                                 </Row>
@@ -253,7 +266,7 @@ const Home = () => {
                                 <Row>
                                     <Col md="2" >Zip Code</Col>
                                     <Col md="10" >
-                                        <Form.Control type="text" placeholder="zip code" {...register("location")} />
+                                        <Form.Control type="text" placeholder="Zip Code" {...register("location")} />
                                         {errors && errors.location?.message && <ErrorMessage message={errors.location?.message} />}
                                     </Col>
                                 </Row>

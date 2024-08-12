@@ -52,6 +52,38 @@ def get_model_colors(make,model):
     except Exception as e:
         print(e)
         return []
+    
+
+def get_model_engineSize(make,model,trim):
+    try:
+        print("get enginesize")
+        with open('dropdown_info/makes_models_trims_to_enginesize','r') as f:
+            engine_sizes = json.load(f)
+        models_to_engine = {
+            tuple(key.split('_')): engines for key, engines in engine_sizes.items()
+        }
+        engine_key = (make,model,trim)   
+        print("done")
+        return models_to_engine.get(engine_key, [])
+    except Exception as e:
+        print(e)
+        return []
+    
+def get_model_gasMileage(make,model,trim):
+    try:
+        print("get gasmileage")
+        with open('dropdown_info/makes_models_trims_to_gasmileage','r') as f:
+            gas_mileages = json.load(f)
+        models_to_gasmileage = {
+            tuple(key.split('_')): gasmileage for key, gasmileage in gas_mileages.items()
+        }
+        gasmileage_key = (make,model,trim)
+        print("done")
+        return models_to_gasmileage.get(gasmileage_key, [])  
+    except Exception as e:
+        print(e)
+        return []
+
 
 def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmission,fuel,drive):
     with open('model.pkl', 'rb') as f:
@@ -112,7 +144,7 @@ def predict_price(make,model,year,trim,mileage,color,engine,gas,location,transmi
     print(new_car)
 
     predicted_price = regressor.predict(new_car)
-    return predicted_price[0]
+    return round(predicted_price[0])
 
 
 
@@ -143,9 +175,31 @@ def colors():
     make = request.args.get('make')
     model = request.args.get('model')
     if not make or not model:
-        return jsonify({'error': 'Make, Model, And Zip Code Are Required'}), 400
+        return jsonify({'error': 'Make And Model Are Required'}), 400
     colors = get_model_colors(make,model)
     return jsonify({'colors': colors})
+
+# get engine sizes for the chosen model
+@app.route('/enginesize', methods=['GET'])
+def enginesize():
+    make = request.args.get('make')
+    model = request.args.get('model')
+    trim = request.args.get('trim')
+    if not make or not model or not trim:
+        return jsonify({'error': 'Make, Model, And Trim Are Required'}), 400
+    sizes = get_model_engineSize(make,model,trim)
+    return jsonify({'sizes': sizes})
+
+# get gas mileages for the chosen model
+@app.route('/gasmileage', methods=['GET'])
+def gasmileage():
+    make = request.args.get('make')
+    model = request.args.get('model')
+    trim = request.args.get('trim')
+    if not make or not model or not trim:
+        return jsonify({'error': 'Make, Model, And Trim Are Required'}), 400
+    gasMileage = get_model_gasMileage(make,model,trim)
+    return jsonify({'gasMileage': gasMileage})
 
 # use trained model to predict a price
 @app.route('/predict', methods=['POST'])
