@@ -1,3 +1,7 @@
+Basic web app where a user can enter specific information about their to get a predicted value
+
+
+notes for me:
 create venv:
 python3 -m venv venv
 
@@ -10,8 +14,6 @@ playwright install
 
 playwright codegen website_to_be_scraped.com <-- gives real time playwright code while browsing website
 
-
-Web app to predict price of a used car given specific information 
 
 car-price-app: react folder for frontend; edit proxy in package.json with backend url
  - /src/pages/home.js: main page
