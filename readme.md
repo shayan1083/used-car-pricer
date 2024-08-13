@@ -30,7 +30,6 @@ dropdown_info: contains json files of car information, like mappings of makes to
 
 encoders: contains encoders used to encode specific attributes of a car
 
-random_forest_model.pkl: best model i found in model.ipynb
 
 
 other notes:
